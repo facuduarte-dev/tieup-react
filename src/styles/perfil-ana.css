@@ -1,0 +1,170 @@
+/*========================
+    RESET
+    ======================*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===========================
+   VARIABLES
+=========================== */
+
+:root {
+  --verdeClaro: #50b4aa;
+  --verdeClaroT: rgba(80, 180, 170, 0.4);
+  --verdeMedio: #3f928a;
+  --verdeOscuro: #306e68;
+  --blanco: #ffffff;
+  --pastelClaro: #f3eddf;
+  --pastelOscuro: #e5d8ba;
+}
+
+/*===========================
+    BODY
+===========================*/
+body {
+  background-color: var(--pastelClaro);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*=======================
+    PERFIL
+=======================*/
+
+.perfilContainer img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+
+  border: 4px dashed var(--verdeClaro);
+}
+
+.box1-box2 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+#box1 {
+  display: flex;
+
+  align-items: center;
+  justify-content: left;
+
+  gap: 30px;
+}
+
+#box1txt {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+#box2 {
+  background-color: var(--verdeClaroT);
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+}
+
+#box2 a {
+  background-color: var(--verdeOscuro);
+  color: var(--blanco);
+  text-decoration: none;
+
+  padding: 10px;
+  border-radius: 10px;
+
+  margin: 10px;
+}
+
+.box3-box4 {
+  display: grid;
+  grid-template-columns: 4.5fr 3fr;
+
+  margin-top: 20px;
+}
+
+#box3 {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+
+#box3 p {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#box3 h2 {
+  margin: 10px;
+}
+
+#box3span {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+#box4 {
+  background-color: var(--blanco);
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.skill {
+  background-color: var(--pastelClaro);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.title {
+  padding: 40px 20px 24px;
+  text-align: center;
+}
+
+.perfilContainer {
+  width: min(1100px, calc(100% - 40px));
+  margin: 0 auto 48px;
+}
+
+#box1,
+#box2,
+#box3,
+#box4 {
+  padding: 28px;
+}
+
+@media (max-width: 800px) {
+  .box1-box2,
+  .box3-box4 {
+    grid-template-columns: 1fr;
+  }
+
+  #box1 {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #box1 img {
+    margin: 0;
+  }
+
+  #box2 {
+    border-radius: 20px;
+    margin-top: 20px;
+  }
+}
