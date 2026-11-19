@@ -1,0 +1,642 @@
+/* ===========================
+   RESET
+=========================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===========================
+   VARIABLES
+=========================== */
+
+:root {
+  --verdeClaro: #50b4aa;
+  --verdeMedio: #3f928a;
+  --verdeOscuro: #306e68;
+  --blanco: #ffffff;
+  --pastelClaro: #f3eddf;
+  --pastelOscuro: #e5d8ba;
+}
+
+/* ===========================
+   BODY
+=========================== */
+
+body {
+  background-color: var(--pastelClaro);
+  color: #111111;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+/* ===========================
+   HERO
+=========================== */
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  width: min(1180px, calc(100% - 80px));
+  margin: 30px auto 60px;
+}
+
+.heroTxt {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: black;
+}
+
+.hero h1 {
+  width: 450px;
+  font-size: 3rem;
+  color: #111111;
+}
+
+.hero p {
+  width: 350px;
+  color: black;
+}
+
+.heroImg {
+  width: 350px;
+}
+
+.divHeroNav {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.divHeroNav input {
+  width: 350px;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+}
+
+.hero a {
+  text-decoration: none;
+}
+
+#aHero1 {
+  background-color: var(--verdeOscuro);
+  color: var(--blanco);
+  padding: 12px 20px;
+  border-radius: 25px;
+  margin-right: 10px;
+}
+
+#aHero2 {
+  border: 2px solid var(--verdeOscuro);
+  color: #111111;
+  padding: 10px 20px;
+  border-radius: 25px;
+}
+
+/* ===========================
+   TITULOS
+=========================== */
+
+#titleCatPopulares,
+#titleDestacados,
+#titleComoFunciona,
+#titleResenas {
+  text-align: center;
+  margin: 60px 0;
+  font-size: 2rem;
+  color: #111111;
+}
+
+/* ===========================
+   CATEGORÍAS
+=========================== */
+
+.cardContainer {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 40px;
+  width: min(1280px, 100%);
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.card {
+  width: 100%;
+  height: 220px;
+
+  background-color: var(--blanco);
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+
+  text-align: center;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+
+  transition: 0.5s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.card h2 {
+  margin: 0;
+}
+
+.card p {
+  color: black;
+  line-height: 1.5;
+}
+
+/* ===========================
+   DESTACADOS
+=========================== */
+
+.cardDestacadosContainer {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 30px;
+  width: min(1280px, 100%);
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.cardDestacado {
+  background-color: var(--blanco);
+  width: 100%;
+  height: 380px;
+
+  color: black;
+
+  padding: 20px;
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cardDestacado:hover {
+  transform: translateY(-6px);
+}
+
+.cardDestacado img,
+.cardDestacado video {
+  width: 100%;
+  height: 170px;
+
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.cardDestacado h2 {
+  margin-top: 5px;
+}
+
+.cardDestacado button {
+  margin-top: auto;
+
+  background-color: var(--verdeOscuro);
+  color: var(--blanco);
+
+  border: none;
+  border-radius: 10px;
+
+  padding: 12px;
+
+  cursor: pointer;
+  transition: 0.67s;
+}
+
+.cardDestacado a {
+  background-color: var(--verdeOscuro);
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  padding: 12px;
+  border-radius: 10px;
+
+  color: white;
+  text-decoration: none;
+
+  cursor: pointer;
+  transition: 0.67s;
+}
+
+.cardDestacado a:hover {
+  background-color: var(--verdeClaro);
+}
+
+/* ===========================
+   COMO FUNCIONA
+=========================== */
+.ComoFuncionaContainer {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 30px;
+  width: min(1280px, 100%);
+  margin: 0 auto;
+  padding: 0 40px;
+  align-items: center;
+}
+
+.ComoFunciona {
+  width: 100%;
+  height: 280px;
+
+  background-color: var(--blanco);
+  color: black;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  gap: 15px;
+
+  padding: 30px;
+  border-radius: 20px;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+
+  transition: 0.67s;
+}
+
+.ComoFunciona:hover {
+  transform: translateY(-6px);
+}
+
+.ComoFunciona img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+}
+
+.ComoFunciona > i {
+  width: 90px;
+  height: 90px;
+  display: grid;
+  place-items: center;
+  color: var(--verdeClaro);
+  font-size: 60px;
+}
+
+.ComoFunciona h2 {
+  margin: 0;
+  color: #111111;
+}
+
+.ComoFunciona p {
+  line-height: 1.5;
+}
+
+/* ===========================
+   RESEÑAS
+=========================== */
+
+.reseñas {
+  padding: 70px 40px;
+}
+.reseñasCardContainer {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 30px;
+  width: min(1200px, 100%);
+  margin: 0 auto;
+}
+
+.cardReseña {
+  width: 100%;
+  height: 220px;
+
+  background-color: var(--blanco);
+
+  padding: 30px;
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+
+  color: black;
+}
+
+.cardReseña:hover {
+  transform: translateY(-6px);
+  box-shadow: rgba(0, 0, 0, 0.08);
+}
+
+.cardReseña p {
+  line-height: 1.6;
+}
+
+.cardReseña p:first-child {
+  font-style: italic;
+}
+
+.cardReseña p:last-child {
+  font-weight: bold;
+  color: #111111;
+}
+
+footer img {
+  width: 200px;
+  height: auto;
+  filter: brightness(0) invert(1);
+}
+
+footer {
+  background-color: var(--verdeOscuro);
+  color: var(--blanco);
+
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+
+  padding: 40px 60px;
+}
+
+footer div {
+  width: 220px;
+}
+
+footer p {
+  color: var(--blanco);
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+footer h3 {
+  color: var(--blanco);
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0px;
+}
+
+footer li {
+  margin-bottom: 10px;
+}
+
+footer a,
+.footerText {
+  color: var(--blanco);
+  text-decoration: none;
+  font-size: 15px;
+}
+
+footer a:hover {
+  color: var(--blanco);
+}
+
+/* ==================================
+   LAPTOPS
+   ================================== */
+
+@media (max-width: 1439px) {
+  .cardContainer {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    justify-content: initial;
+    gap: 30px;
+  }
+
+  .cardDestacadosContainer,
+  .reseñasCardContainer {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+    padding: 0 40px;
+  }
+
+  .ComoFuncionaContainer {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+    padding: 0 40px;
+  }
+
+  .card,
+  .cardDestacado,
+  .ComoFunciona,
+  .cardReseña {
+    width: 100%;
+  }
+}
+
+/* ==================================
+   TABLETS
+   ================================== */
+
+@media (max-width: 1100px) {
+  .hero {
+    align-items: center;
+    gap: 40px;
+    margin: 40px 30px;
+  }
+
+  .hero h1,
+  .hero p,
+  .divHeroNav input {
+    width: 100%;
+  }
+
+  .heroTxt {
+    flex: 1;
+  }
+
+  .heroImg {
+    width: 300px;
+    max-width: 45%;
+  }
+
+  .cardContainer {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    justify-content: initial;
+    gap: 24px;
+    padding: 0 30px;
+  }
+
+  .cardDestacadosContainer,
+  .ComoFuncionaContainer,
+  .reseñasCardContainer {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    justify-content: initial;
+    gap: 24px;
+    padding: 0 30px;
+  }
+
+  .card,
+  .cardDestacado,
+  .ComoFunciona,
+  .cardReseña {
+    width: 100%;
+  }
+
+  footer {
+    flex-wrap: wrap;
+    gap: 35px;
+  }
+}
+
+/* ==================================
+   CELULARES
+   ================================== */
+
+@media (max-width: 767px) {
+  .hero {
+    flex-direction: column;
+    gap: 28px;
+    width: auto;
+    margin: 30px 20px 44px;
+    text-align: center;
+  }
+
+  .heroTxt {
+    width: 100%;
+  }
+
+  .hero h1 {
+    width: 100%;
+    font-size: 2.2rem;
+  }
+
+  .hero p {
+    width: 100%;
+  }
+
+  .heroImg {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .divHeroNav {
+    width: 100%;
+  }
+
+  .divHeroNav input {
+    width: 100%;
+  }
+
+  .divHeroNav div {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  #aHero1 {
+    margin-right: 0;
+  }
+
+  #titleCatPopulares,
+  #titleDestacados,
+  #titleComoFunciona,
+  #titleResenas {
+    margin: 45px 20px 30px;
+    font-size: 1.7rem;
+  }
+
+  .cardContainer,
+  .cardDestacadosContainer,
+  .ComoFuncionaContainer,
+  .reseñasCardContainer {
+    grid-template-columns: 1fr;
+    justify-content: initial;
+    gap: 20px;
+    padding: 0 20px;
+  }
+
+  .card,
+  .cardDestacado,
+  .ComoFunciona,
+  .cardReseña {
+    width: 100%;
+  }
+
+  .card {
+    height: auto;
+    min-height: 160px;
+    padding: 22px;
+  }
+
+  .cardDestacado {
+    height: auto;
+    min-height: 0;
+  }
+
+  .ComoFunciona {
+    height: auto;
+    min-height: 200px;
+    padding: 24px;
+  }
+
+  .cardReseña {
+    height: auto;
+    min-height: 170px;
+  }
+
+  .reseñas {
+    padding: 40px 0;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 30px;
+    padding: 35px 24px;
+  }
+
+  footer div {
+    width: 100%;
+  }
+}
+
+/* ==================================
+   CELULARES PEQUEÑOS
+   ================================== */
+
+@media (max-width: 480px) {
+  .hero {
+    margin: 25px 16px;
+  }
+
+  .hero h1 {
+    font-size: 1.9rem;
+  }
+
+  .cardContainer,
+  .cardDestacadosContainer,
+  .ComoFuncionaContainer,
+  .reseñasCardContainer {
+    padding: 0 16px;
+  }
+
+  .card,
+  .cardDestacado,
+  .ComoFunciona,
+  .cardReseña {
+    padding: 20px;
+  }
+
+  footer {
+    padding: 30px 20px;
+  }
+}
